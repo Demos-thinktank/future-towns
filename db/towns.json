@@ -1,0 +1,44 @@
+  {
+    "towns": [
+  {
+    "Town": "London",
+    "Region": "0",
+    "Town Type": "urban",
+    "Population Size": "10000000",
+    "Average Age": "35",
+    "Average House Price": "1000000"
+  },
+  {
+    "Town": "Cambridge",
+    "Region": "1",
+    "Town Type": "suburban",
+    "Population Size": "111111",
+    "Average Age": "45",
+    "Average House Price": "111111"
+  },
+  {
+    "Town": "Manchester",
+    "Region": "2",
+    "Town Type": "urban",
+    "Population Size": "222222",
+    "Average Age": "22",
+    "Average House Price": "2222222"
+  },
+  {
+    "Town": "Edinburgh",
+    "Region": "3",
+    "Town Type": "rural",
+    "Population Size": "33333",
+    "Average Age": "33",
+    "Average House Price": "33333"
+  },
+  {
+    "Town": "Bristol",
+    "Region": "4",
+    "Town Type": "suburban",
+    "Population Size": "44444",
+    "Average Age": "44",
+    "Average House Price": "444444"
+  }
+]
+}
