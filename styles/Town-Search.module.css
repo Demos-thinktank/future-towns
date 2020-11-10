@@ -1,26 +1,36 @@
-/* .header {
-  display: flex;
-  flex-wrap: wrap;
-} */
-
-.main {
-  min-height: 100vh;
+.page {
   background-image: url("/images/skyline.svg");
+  min-height: 100vh;
+  background-color: #ee7155;
   background-position: bottom;
   background-repeat: repeat-x;
-  background-color: #ee7155;
+}
+
+.main {
+  padding: 2rem 3rem;
 }
 
 .h1 {
   display: inline;
+  margin-right: 1rem;
+  -webkit-text-stroke: 1.5px;
 }
 
 .h1_size {
   font-size: 2rem;
 }
 
+.h2 {
+  margin: 0.5rem 0 1rem 0;
+  -webkit-text-stroke: 0.25px;
+}
+
 .town_input {
-  max-width: 100%;
+  max-width: 80%;
+  border-radius: 5px 0 0 5px;
+  padding-left: 10px;
+  border: 1px solid black;
+  -webkit-text-stroke: 1.5px;
 }
 
 .container {
@@ -38,8 +48,9 @@
   display: flex;
   width: 30%;
   margin: 2rem 0;
-  border: 1px solid black;
-  border-radius: 5px;
+  border: 2px solid #1d3336;
+  box-shadow: 5px 5px 8px;
+  border-radius: 10px;
   background-color: white;
 }
 
@@ -57,17 +68,49 @@
 }
 
 .card_text {
-  background-color: darkgray;
+  background-color: #feebb3;
+  border-left: 1px solid #1d3336;
+  border-radius: 0 10px 10px 0;
   flex-grow: 1;
-  padding: 0.2rem 0.5rem;
+  padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.card_text_btn_div {
+  /* transform: rotate(-20deg); */
+  align-self: flex-end;
+  /* background: purple;
+  color: white;
+  clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
+  padding: 20% 20%; */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 0 0 10px 0;
+  /* display: flex;
+  justify-content: flex-end;
+  align-items: flex-end; */
+  background-color: transparent;
+  border: none;
+  display: flex;
+  width: min-content;
+  /* overflow: hidden; */
 }
 
 .loading {
   width: 100%;
   height: 100vh;
   background-color: #ee7155;
+}
+
+.srty_btn {
+  height: max-content;
+  padding: 0.15rem 0.3rem;
+  font-weight: bold;
+  background-color: #ee7155;
+  border-radius: 5px;
 }
