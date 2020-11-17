@@ -48,10 +48,10 @@ export default function TownSearch({
 
     var d = document
       .getElementById("townlist")
-      .options.namedItem(e.target.value);
+      .options.namedItem(e.target.value.toUpperCase());
 
     if (d) {
-      console.log(d.getAttribute("data-id"));
+      // console.log(d.getAttribute("data-id"));
       return setSelectedTownIndex(parseInt(d.getAttribute("data-id")));
     } else {
       return setSelectedTownIndex(null);

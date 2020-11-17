@@ -18,15 +18,25 @@ export const getStaticProps = async () => {
   const fileContents = JSON.parse(fs.readFileSync(filePath, "utf8"));
 
   // const towns = fileContents.towns.map((val) => val["Town"]);
-  const questions = fileContents.questions;
+  //   const questions = fileContents.questions;
+  const answerValues = fileContents.data.map((obj) => ({
+    yes: obj["Adjusted yes"],
+    no: obj["Adjusted no"],
+  }));
+  const questions = fileContents.data.map((obj) => obj.Text.toUpperCase());
 
   return {
-    props: { questions },
+    props: { questions, answerValues },
   };
 };
 
-const index = ({ questions, selectedTownIndex, setSelectedTownIndex }) => {
-  //   console.log("qs", questions);
+const index = ({
+  questions,
+  answerValues,
+  selectedTownIndex,
+  setSelectedTownIndex,
+}) => {
+//   console.log("qs", answerValues);
   const [state, setState] = useState(Array(questions.length).fill(0));
   const [counter, setCounter] = useState(0);
 
@@ -38,10 +48,6 @@ const index = ({ questions, selectedTownIndex, setSelectedTownIndex }) => {
     setState(stateCopy);
     setCounter((prevState) => prevState + 1);
   }
-
-  useEffect(() => {
-    console.log(state);
-  }, [state]);
 
   return (
     <div>
@@ -57,11 +63,11 @@ const index = ({ questions, selectedTownIndex, setSelectedTownIndex }) => {
             <h1 className={styles.h1}>ONE TOWN, TWO VISIONS</h1>
             <h2 className={styles.h2}>
               OUR RESEARCH FOUND THAT THERE WERE TWO GROUPS OF PEOPLE WITH
-              DIFFERENT VISIONS OF OUR FUTURE TOWNS, WHICH ARE YOU?
-              VOTE ON THE STATEMENTS BELOW TO FIND OUT.
+              DIFFERENT VISIONS OF OUR FUTURE TOWNS, WHICH ARE YOU? VOTE ON THE
+              STATEMENTS BELOW TO FIND OUT.
             </h2>
           </header>
-          {counter !== 10 && (
+          {counter !== 12 && (
             <>
               <div
                 style={{
@@ -122,13 +128,13 @@ const index = ({ questions, selectedTownIndex, setSelectedTownIndex }) => {
                     className={styles.btn}
                     onClick={handleClick}
                     style={{ marginLeft: "2ch" }}
-                    value={5}
+                    value={answerValues[counter].yes}
                   >
                     YES
                   </button>
                   <button
                     className={styles.btn}
-                    value={-5}
+                    value={answerValues[counter].no}
                     onClick={handleClick}
                     style={{ margin: "0 1.5ch" }}
                   >
@@ -145,7 +151,7 @@ const index = ({ questions, selectedTownIndex, setSelectedTownIndex }) => {
               </div>
             </>
           )}
-          {counter == 10 && (
+          {counter == 12 && (
             <Zoom>
               <div
                 style={{
@@ -173,7 +179,7 @@ const index = ({ questions, selectedTownIndex, setSelectedTownIndex }) => {
                     WebkitTextStroke: "0.5px",
                     padding: "0.1rem 0.5rem",
                     borderRadius: "3px",
-                    textAlign: 'center'
+                    textAlign: "center",
                   }}
                 >
                   TOWN TRADITIONALIST

@@ -34,10 +34,10 @@ export default function Home({
 
     var el = document
       .getElementById("townlist")
-      .options.namedItem(e.target.value);
+      .options.namedItem(e.target.value.toUpperCase());
 
     if (el) {
-      console.log(el.getAttribute("data-id"));
+      // console.log(el.getAttribute("data-id"));
       setSelectedTownIndex(parseInt(el.getAttribute("data-id")));
     } else {
       setSelectedTownIndex(null);
