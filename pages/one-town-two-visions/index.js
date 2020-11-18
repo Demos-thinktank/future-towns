@@ -11,6 +11,7 @@ import Zoom from "react-reveal/Fade";
 import { useEffect, useState } from "react";
 // import Questionnaire from "../../components/Questionnaire";
 import Gauge from "../../components/Gauge";
+import Footer from "../../components/Footer";
 
 export const getStaticProps = async () => {
   const dbDirectory = path.join(process.cwd(), "./db");
@@ -36,7 +37,7 @@ const index = ({
   selectedTownIndex,
   setSelectedTownIndex,
 }) => {
-//   console.log("qs", answerValues);
+  //   console.log("qs", answerValues);
   const [state, setState] = useState(Array(questions.length).fill(0));
   const [counter, setCounter] = useState(0);
 
@@ -48,6 +49,18 @@ const index = ({
     setState(stateCopy);
     setCounter((prevState) => prevState + 1);
   }
+
+  const groupA = {
+    title: "GROUP A",
+    text:
+      "Group A are characterised by their support for greater diversity in their town and are more relaxed about the character of their town changing. They are worried about ageing in towns and strongly support the creation of new jobs and homes. Changers prioritise access to amenities and services over a sense of community. Changers are more likely to be younger, Remain-supporting and are evenly split between voting Conservative and Labour.",
+  };
+
+  const groupB = {
+    title: "GROUP B",
+    text:
+      "Group A are characterised by their opposition to greater diversity in their town and are worried about their town losing its identity. They are relaxed about ageing population in towns and are less supportive of new jobs and homes in their town. Preservers/keepers prioritise a sense of community over access to amenities and services. Preservers/keepers are more likely to be older, Leave and Conservative supporting and in the south of England.",
+  };
 
   return (
     <div>
@@ -182,23 +195,21 @@ const index = ({
                     textAlign: "center",
                   }}
                 >
-                  TOWN TRADITIONALIST
+                  {state.reduce((a, c) => a + c, 50) > 50
+                    ? groupA.title
+                    : groupB.title}
                 </p>
                 <p style={{ fontWeight: "bold" }}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
+                  {state.reduce((a, c) => a + c, 50) > 50
+                    ? groupA.text
+                    : groupB.text}
                 </p>
               </div>
             </Zoom>
           )}
           <Gauge score={state.reduce((a, c) => a + c, 50)} />
         </main>
+        <Footer />
       </div>
     </div>
   );

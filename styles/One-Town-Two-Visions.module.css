@@ -1,13 +1,16 @@
 .page {
   background-image: url("/images/home-half1.svg"), url("/images/home-half2.svg");
-  background-position: 0rem 40vh, 100% 40vh;
+  background-position: 0 40vh, 100% 40vh;
   background-repeat: no-repeat, no-repeat;
   background-color: #ee7155;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .main {
-  padding: 2rem 3rem;
+  padding: 2rem 3rem 0 3rem;
+  flex: 1;
 }
 
 .h1 {

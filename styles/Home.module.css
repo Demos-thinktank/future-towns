@@ -1,7 +1,7 @@
 .container {
-display: flex;
+  display: flex;
   flex-direction: column;
-justify-content: center;
+  justify-content: center;
   align-items: center;
   /* background-color: rgba(255, 255, 255, 0.8); */
   /* /* border-top: 2px solid #1d7155; */
@@ -15,15 +15,105 @@ justify-content: center;
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   /* align-items: center; */
-  background-color: #ee7155;
+  /* background-color: #ee7155; */
   min-height: 100vh;
-  background-image: url("/images/town-vector.svg");
-  background-position: center bottom;
-  background-repeat: no-repeat;
+  /* background-image: url("/images/town-vector.svg"); */
+  /* background-position: center bottom; */
+  /* background-repeat: no-repeat; */
   /* background-size: 50%; */
-  background-size: cover;
+  /* background-size: cover; */
+}
+
+.ft_section {
+  display: flex;
+  /* flex-wrap: wrap; */
+  background-color: #ee7155;
+  flex: 3;
+  background-image: url("/images/town-4.svg");
+  background-position: 40% 100%;
+  background-repeat: no-repeat;
+  background-size: 25%;
+}
+
+@media only screen and (max-width: 600px) {
+  .ft_section {
+    flex-direction: column;
+  }
+}
+
+.ft_section_heading {
+  margin: 1rem;
+  font-size: 3rem;
+  -webkit-text-stroke: 4px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+.ft_section_heading_span {
+  color: whitesmoke;
+  font-weight: normal;
+  -webkit-text-stroke: 0px;
+}
+
+.ft_section_text {
+  /* font-size: large; */
+  flex: 1;
+  /* padding: 2rem; */
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section {
+  margin: 2rem;
+}
+
+.tot_section {
+  background-color: #bfc6cf;
+  flex: 1;
+  background-image: url("/images/town-1.svg");
+  background-position: 95% bottom;
+  background-repeat: no-repeat;
+  background-size: 25%;
+}
+
+.ttt_section {
+  background-color: #1d3336;
+  justify-content: flex-end;
+  display: flex;
+  text-align: end;
+  flex: 1;
+  background-image: url("/images/town-2.svg");
+  background-position: 5% bottom;
+  background-repeat: no-repeat;
+  background-size: 25%;
+}
+
+.bkg_img_section {
+  background-color: #ee7155;
+  flex: 1;
+}
+
+.txt_color_white {
+  color: white;
+}
+
+.section_link {
+  align-self: flex-end;
+  -webkit-text-stroke: 1px;
+  margin: 0.5rem 0;
+}
+
+.section_heading {
+  font-size: 1.75rem;
+  -webkit-text-stroke: 2px;
+  padding-bottom: 0.5rem;
 }
 
 .footer {

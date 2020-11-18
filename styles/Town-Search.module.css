@@ -4,10 +4,14 @@
   background-color: #ee7155;
   background-position: bottom;
   background-repeat: repeat-x;
+  display: flex;
+  flex-direction: column;
 }
 
 .main {
-  padding: 2rem 3rem;
+  padding: 2rem 3rem 0 3rem;
+  flex: 1;
+  overflow-x: hidden;
 }
 
 .h1 {
