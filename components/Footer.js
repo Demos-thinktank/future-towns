@@ -52,7 +52,7 @@ const Footer = () => {
           justifyContent: 'center',
         }}
       >
-        <a href='https://demos.co.uk/about/contact/' target='blank'>Contact us</a>
+        <a href='https://demos.co.uk/about/contact/' target='blank'>Contact Us</a>
         <p style={{color: 'white', margin: '0 0.5rem'}}>|</p>
         <Link href="/privacy-policy">
           <a>Privacy Policy</a>

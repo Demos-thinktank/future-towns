@@ -68,7 +68,7 @@ export default function Home({
         <Nav />
         <div className={styles.ft_section}>
           <div className={styles.ft_section_heading}>
-            <div style={{ margin: "0 auto auto auto" }}>
+            <div style={{ margin: "auto" }}>
               <p>FUTURE</p>
               <p>
                 T<span className={styles.ft_section_heading_span}>O</span>WNS

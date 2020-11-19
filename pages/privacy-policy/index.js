@@ -23,7 +23,7 @@ const index = () => {
         <Nav />
         <main
           className={styles.main}
-          style={{ maxWidth: "1024px", margin: "auto" }}
+          style={{ maxWidth: "1024px" }}
         >
           <h1 className={styles.h1}>PRIVACY POLICY</h1>
           <br />
