@@ -34,3 +34,10 @@
   background-color: #ee7155;
   border-radius: 5px;
 }
+
+
+@media only screen and (max-width: 768px) {
+  .question_card {
+    width: 100% !important
+  }
+}

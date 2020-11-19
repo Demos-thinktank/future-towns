@@ -1,9 +1,7 @@
 .page {
-  background-image: url("/images/skyline.svg");
   min-height: 100vh;
   background-color: #ee7155;
-  background-position: bottom;
-  background-repeat: repeat-x;
+
   display: flex;
   flex-direction: column;
 }
@@ -12,12 +10,16 @@
   padding: 2rem 3rem 0 3rem;
   flex: 1;
   overflow-x: hidden;
+  background-image: url("/images/skyline.svg");
+  background-position: bottom;
+  background-repeat: repeat-x;
 }
 
 .h1 {
   display: inline;
   margin-right: 1rem;
   -webkit-text-stroke: 1.5px;
+  margin-top: 0.25rem;
 }
 
 .h1_size {
@@ -35,6 +37,12 @@
   padding-left: 10px;
   border: 1px solid black;
   -webkit-text-stroke: 1.5px;
+}
+
+@media only screen and (max-width: 450px) {
+  .town_input {
+    max-width: 50%
+  }
 }
 
 .container {
@@ -56,6 +64,18 @@
   box-shadow: 5px 5px 8px;
   border-radius: 10px;
   background-color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+  .card {
+    width: 45%
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .card {
+    width: 90%
+  }
 }
 
 .card_image_div {

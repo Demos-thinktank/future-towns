@@ -76,15 +76,16 @@ export default function Home({
             </div>
           </div>
           <div className={styles.ft_section_text}>
-            <p>
+            <p style={{ marginBottom: "0.5rem" }}>
               Demos and KPMG have been investigating what people in towns want
               the future of towns in the UK to look like.. Here you can find out
               more about your town and see how it compares to other towns. You
               can also see how your views on the future of towns compares to
               others.
             </p>
-            <p className={styles.section_link}>READ THE REPORT</p>
-          </div>
+            <Link href='/'>
+            <a className={styles.section_link}>READ THE REPORT</a>
+          </Link></div>
         </div>
         <div className={styles.tot_section}>
           <div style={{ maxWidth: "75%" }} className={`${styles.section} `}>
@@ -95,12 +96,12 @@ export default function Home({
               <p>TYPES OF</p>
               <p>TOWNS</p>
             </div>
-            <p>
+            <p style={{ marginBottom: "0.5rem" }}>
               Our research found that there are different types of town in the
               UK
             </p>
-            <Link href="/town-search">
-              <p className={styles.section_link}>EXPLORE</p>
+            <Link href="/town-search" style={{margin: '1rem'}}>
+              <a className={styles.section_link}>EXPLORE</a>
             </Link>
           </div>
         </div>
@@ -113,14 +114,14 @@ export default function Home({
               <p className={styles.txt_color_white}>THE TWO</p>
               <p className={styles.txt_color_white}>TOWN TRIBES</p>
             </div>
-            <p className={styles.txt_color_white}>
+            <p className={styles.txt_color_white}style={{ marginBottom: "0.5rem" }} >
               Our research found that there are different types of town in the
               UK
             </p>
             <Link href="/one-town-two-visions">
-              <p className={`${styles.txt_color_white} ${styles.section_link}`}>
+              <a className={`${styles.txt_color_white} ${styles.section_link}`}>
                 EXPLORE
-              </p>
+              </a>
             </Link>
           </div>
         </div>

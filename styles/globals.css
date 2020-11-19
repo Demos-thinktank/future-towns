@@ -24,3 +24,7 @@ a {
   box-sizing: border-box;
   color: #1d3336;
 }
+
+*:focus {
+  outline: none;
+}

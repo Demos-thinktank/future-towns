@@ -34,6 +34,7 @@ export default function TownSearch({
   const [townResults, setTownResults] = useState(
     selectedTownIndex || selectedTownIndex === 0 ? data[selectedTownIndex] : ""
   );
+  const [error, setError] = useState(false);
 
   // console.log(townResults, "tr");
   const router = useRouter();
@@ -45,7 +46,7 @@ export default function TownSearch({
   // }, []);
 
   function handleChange(e) {
-    // setError(false);
+    setError(false);
     // input box border color
 
     var d = document
@@ -60,7 +61,11 @@ export default function TownSearch({
     }
   }
 
-  function handleClick() {
+  function handleClick(e) {
+    if (e.keyCode !== 13) {
+      // console.log("duifind");
+      return;
+    }
     if (selectedTownIndex || selectedTownIndex === 0) {
       setTownResults(data[selectedTownIndex]);
     } else {
@@ -83,10 +88,11 @@ export default function TownSearch({
         <Nav />
         <main className={styles.main}>
           <header className={styles.header}>
+            {/* <div style={{width: 'max-content'}}> */}
             <div
               style={{
                 display: "flex",
-                alignItems: "center",
+                alignItems: "flex-start",
                 flexWrap: "wrap",
               }}
             >
@@ -94,34 +100,54 @@ export default function TownSearch({
                 WHAT KIND OF TOWN IS...
               </h1>
               {/* {townResults && ( */}
-              <div style={{ display: "flex", maxWidth: "100%" }}>
-                <input
-                  className={`${styles.h1_size} ${styles.town_input}`}
-                  type="text"
-                  defaultValue={townResults.Town ? townResults.Town.toUpperCase() : ''}
-                  list="townlist"
-                  name="townlist"
-                  onChange={handleChange}
-                />
-                <datalist id="townlist">
-                  {towns.map((val, i) => (
-                    <option id={val} value={val} key={i} data-id={i} />
-                  ))}
-                </datalist>
-                <button
+              <div style={{ display: "flex", flexDirection: "column" }}>
+                <div style={{ display: "flex", maxWidth: "100%" }}>
+                  <input
+                    className={`${styles.h1_size} ${styles.town_input}`}
+                    type="text"
+                    defaultValue={
+                      townResults.Town ? townResults.Town.toUpperCase() : ""
+                    }
+                    list="townlist"
+                    name="townlist"
+                    onChange={handleChange}
+                    onKeyDown={handleClick}
+                  />
+                  <datalist id="townlist">
+                    {towns.map((val, i) => (
+                      <option id={val} value={val} key={i} data-id={i} />
+                    ))}
+                  </datalist>
+                  <button
+                    style={{
+                      backgroundColor: "transparent",
+                      padding: "0.25rem",
+                      borderRadius: "0 5px 5px 0",
+                      border: "1px solid black",
+                    }}
+                    onClick={handleClick}
+                  >
+                    <img src="/images/search.svg" />
+                  </button>
+                </div>
+                <div
                   style={{
-                    backgroundColor: "transparent",
-                    padding: "0.25rem",
-                    borderRadius: "0 5px 5px 0",
-                    border: "1px solid black",
+                    visibility: error ? "visible" : "hidden",
+                    textAlign: "center",
+                    color: "#1d3336",
+                    // marginBottom: "1rem",
+                    // marginRight: "2.8rem",
+                    fontWeight: "900",
+                    fontSize: "1.1rem",
                   }}
-                  onClick={handleClick}
                 >
-                  <img src="/images/search.svg" />
-                </button>
+                  Please try again!
+                </div>
               </div>
               {/* // )} */}
             </div>
+
+            {/* </div> */}
             {townResults && (
               <Fade>
                 <h2 className={styles.h2}>
@@ -152,58 +178,67 @@ export default function TownSearch({
                   </p>
                   <button
                     className={styles.srty_btn}
-                    style={{ margin: "0 1ch 0 1.5ch" }}
+                    style={{
+                      margin: "0 1ch 0 1.5ch",
+                      backgroundColor: "#1d3336",
+                      color: "#ee7155",
+                    }}
                   >
                     YES
                   </button>
-                  <button className={styles.srty_btn}>NO</button>
+                  <button
+                    className={styles.srty_btn}
+                    style={{ backgroundColor: "#1d3336", color: "#ee7155" }}
+                  >
+                    NO
+                  </button>
                 </div>
               </section>
             </Fade>
           )}
           {townResults && (
-              <Fade right cascade>
-            <section className={styles.container}>
-              {Object.keys(townResults)
-                .slice(1)
-                .map((val, i) => (
-                  <section className={styles.card} key={i}>
-                    <div className={styles.card_image_div}>
-                      <img
-                        className={styles.card_image}
-                        src={`/images/${val
-                          .toLowerCase()
-                          .replace(/ /g, "-")}.svg`}
-                      />
-                    </div>
-                    <div className={styles.card_text}>
-                      <h3 style={{ textAlign: "center" }}>{val}</h3>
-                      <p
-                        style={{
-                          fontSize: "1.5rem",
-                          color: "#ee7155",
-                          fontWeight: "bolder",
-                          // WebkitTextStroke: '0.15px black'
-                        }}
-                      >
-                        {townResults[val]}
-                      </p>
-                      {/* <div > */}
-                      {/* <button
+            <Fade right cascade>
+              <section className={styles.container}>
+                {Object.keys(townResults)
+                  .slice(1)
+                  .map((val, i) => (
+                    <section className={styles.card} key={i}>
+                      <div className={styles.card_image_div}>
+                        <img
+                          className={styles.card_image}
+                          src={`/images/${val
+                            .toLowerCase()
+                            .replace(/ /g, "-")}.svg`}
+                        />
+                      </div>
+                      <div className={styles.card_text}>
+                        <h3 style={{ textAlign: "center" }}>{val}</h3>
+                        <p
+                          style={{
+                            fontSize: "1.5rem",
+                            color: "#ee7155",
+                            fontWeight: "bolder",
+                            // WebkitTextStroke: '0.15px black'
+                          }}
+                        >
+                          {townResults[val]}
+                        </p>
+                        {/* <div > */}
+                        {/* <button
                       className={styles.card_text_btn_div}
                       // style={{ margin: "0.5rem", transform: "rotate(-20deg)" }}
                     >
                       <img src="/images/see-more.svg" />
                     </button> */}
-                      {/* </div> */}
-                    </div>
-                    {/* <div style={{ position: "relative" }}>
+                        {/* </div> */}
+                      </div>
+                      {/* <div style={{ position: "relative" }}>
                   
                 </div> */}
-                  </section>
-                ))}
-            </section>
-                </Fade>
+                    </section>
+                  ))}
+              </section>
+            </Fade>
           )}
         </main>
         <Footer />

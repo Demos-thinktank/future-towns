@@ -95,6 +95,7 @@ const index = ({
                   border: "1px solid #1d3336",
                   boxShadow: "3px 3px 10px",
                 }}
+                className={styles.question_card}
               >
                 {questions.map((q, i) => (
                   <div
@@ -121,7 +122,8 @@ const index = ({
               <div
                 style={{
                   display: "flex",
-                  flexWrap: "wrap",
+                  // flexWrap: "wrap",
+                  flexDirection: 'column',
                   alignItems: "center",
                   justifyContent: "center",
                   minHeight: "5rem",
@@ -136,11 +138,12 @@ const index = ({
                 >
                   DO YOU AGREE?{" "}
                 </p>
-                <div>
+                <div style={{display: 'flex'}}>
                   <button
                     className={styles.btn}
                     onClick={handleClick}
-                    style={{ marginLeft: "2ch" }}
+                    style={{ marginLeft: "2ch", backgroundColor: '#1d3336',
+                    color: '#ee7155' }}
                     value={answerValues[counter].yes}
                   >
                     YES
@@ -149,7 +152,8 @@ const index = ({
                     className={styles.btn}
                     value={answerValues[counter].no}
                     onClick={handleClick}
-                    style={{ margin: "0 1.5ch" }}
+                    style={{ margin: "0 1.5ch", backgroundColor: '#1d3336',
+                    color: '#ee7155' }}
                   >
                     NO
                   </button>
@@ -157,6 +161,8 @@ const index = ({
                     className={styles.btn}
                     value={0}
                     onClick={handleClick}
+                    style={{backgroundColor: '#1d3336',
+                    color: '#ee7155'}}
                   >
                     PASS/UNSURE
                   </button>
