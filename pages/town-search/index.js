@@ -62,10 +62,10 @@ export default function TownSearch({
   }
 
   function handleClick(e) {
-    if (e.keyCode !== 13) {
-      // console.log("duifind");
-      return;
-    }
+    // if (e.keyCode !== 13) {
+    //   // console.log("duifind");
+    //   return;
+    // }
     if (selectedTownIndex || selectedTownIndex === 0) {
       setTownResults(data[selectedTownIndex]);
     } else {
