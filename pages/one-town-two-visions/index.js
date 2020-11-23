@@ -36,6 +36,7 @@ const index = ({
   answerValues,
   selectedTownIndex,
   setSelectedTownIndex,
+  isConnected,
 }) => {
   //   console.log("qs", answerValues);
   const [state, setState] = useState(Array(questions.length).fill(0));
@@ -85,12 +86,11 @@ const index = ({
               <div
                 style={{
                   minHeight: "8rem",
-                  marginTop: "2rem",
                   backgroundColor: "whitesmoke",
                   display: "flex",
                   alignItems: "center",
                   width: "80%",
-                  margin: "auto",
+                  margin: "1rem auto",
                   borderRadius: "5px",
                   border: "1px solid #1d3336",
                   boxShadow: "3px 3px 10px",
@@ -123,7 +123,7 @@ const index = ({
                 style={{
                   display: "flex",
                   // flexWrap: "wrap",
-                  flexDirection: 'column',
+                  flexDirection: "column",
                   alignItems: "center",
                   justifyContent: "center",
                   minHeight: "5rem",
@@ -138,12 +138,15 @@ const index = ({
                 >
                   DO YOU AGREE?{" "}
                 </p>
-                <div style={{display: 'flex'}}>
+                <div style={{ display: "flex" }}>
                   <button
                     className={styles.btn}
                     onClick={handleClick}
-                    style={{ marginLeft: "2ch", backgroundColor: '#1d3336',
-                    color: '#ee7155' }}
+                    style={{
+                      margin: "0 1ch",
+                      backgroundColor: "#1d3336",
+                      color: "#ee7155",
+                    }}
                     value={answerValues[counter].yes}
                   >
                     YES
@@ -152,8 +155,11 @@ const index = ({
                     className={styles.btn}
                     value={answerValues[counter].no}
                     onClick={handleClick}
-                    style={{ margin: "0 1.5ch", backgroundColor: '#1d3336',
-                    color: '#ee7155' }}
+                    style={{
+                      margin: "0 1ch",
+                      backgroundColor: "#1d3336",
+                      color: "#ee7155",
+                    }}
                   >
                     NO
                   </button>
@@ -161,8 +167,11 @@ const index = ({
                     className={styles.btn}
                     value={0}
                     onClick={handleClick}
-                    style={{backgroundColor: '#1d3336',
-                    color: '#ee7155'}}
+                    style={{
+                      backgroundColor: "#1d3336",
+                      margin: "0 1ch",
+                      color: "#ee7155",
+                    }}
                   >
                     PASS/UNSURE
                   </button>
@@ -174,7 +183,7 @@ const index = ({
             <Zoom>
               <div
                 style={{
-                  minHeight: "13rem",
+                  minHeight: "15rem",
                   display: "flex",
                   alignItems: "center",
                   flexDirection: "column",

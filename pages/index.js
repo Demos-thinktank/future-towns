@@ -4,7 +4,6 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import styles from "../styles/Home.module.css";
 import { useState } from "react";
-import HomeSVG from "../components/HomeSVG";
 import Nav from "../components/Nav";
 import Link from "next/link";
 import Footer from "../components/Footer";
@@ -112,7 +111,7 @@ export default function Home({
               style={{ minWidth: "max-content" }}
             >
               <p className={styles.txt_color_white}>THE TWO</p>
-              <p className={styles.txt_color_white}>TOWN TRIBES</p>
+              <p className={styles.txt_color_white}>TOWN GROUPS</p>
             </div>
             <p className={styles.txt_color_white}style={{ marginBottom: "0.5rem" }} >
               Our research found that there are different types of town in the

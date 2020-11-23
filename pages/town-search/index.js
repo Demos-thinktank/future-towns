@@ -1,5 +1,7 @@
 import fs from "fs";
 import path from "path";
+import axios from "axios";
+// import { connectToDatabase } from "../../util/mongodb";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import styles from "../../styles/Town-Search.module.css";
@@ -9,6 +11,16 @@ import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
 import Fade from "react-reveal/Fade";
 
+// export async function getServerSideProps(context) {
+//   const { client } = await connectToDatabase()
+
+//   const isConnected = await client.isConnected() // Returns true or false
+
+//   return {
+//     props: { isConnected },
+//   }
+// }
+
 export const getStaticProps = async () => {
   const dbDirectory = path.join(process.cwd(), "./db");
   const filePath = path.join(dbDirectory, "towns.json");
@@ -16,6 +28,9 @@ export const getStaticProps = async () => {
 
   const towns = fileContents.towns.map((val) => val["Town"].toUpperCase());
   const data = fileContents.towns;
+
+  // const { client } = await connectToDatabase();
+  // const isConnected = await client.isConnected(); // Returns true or false
 
   return {
     props: { towns: towns, data },
@@ -35,9 +50,10 @@ export default function TownSearch({
     selectedTownIndex || selectedTownIndex === 0 ? data[selectedTownIndex] : ""
   );
   const [error, setError] = useState(false);
+  const [voted, setVoted] = useState(false);
 
   // console.log(townResults, "tr");
-  const router = useRouter();
+  // const router = useRouter();
 
   // useEffect(() => {
   //   if (!townResults) {
@@ -61,11 +77,7 @@ export default function TownSearch({
     }
   }
 
-  function handleClick(e) {
-    // if (e.keyCode !== 13) {
-    //   // console.log("duifind");
-    //   return;
-    // }
+  function handleClick() {
     if (selectedTownIndex || selectedTownIndex === 0) {
       setTownResults(data[selectedTownIndex]);
     } else {
@@ -73,9 +85,18 @@ export default function TownSearch({
     }
   }
 
-  // if (!townResults) {
-  //   return <div className={styles.loading}></div>;
-  // }
+  async function handleSRTYClick(e) {
+    setVoted(true);
+    let { value } = e.target;
+    const srtyAnswer = {
+      town: townResults.Town.toLowerCase(),
+      yes: 0,
+      no: 0,
+    };
+    value === "yes" ? (srtyAnswer.yes = 1) : (srtyAnswer.no = 1);
+    await axios.post("/api/srty", srtyAnswer);
+    // .then((res) => console.log(res.data));
+  }
 
   return (
     <div>
@@ -172,27 +193,40 @@ export default function TownSearch({
                   cupidatat non proident, sunt in culpa qui officia deserunt
                   mollit anim id est laborum.]
                 </p>
-                <div style={{ display: "flex", alignItems: "center" }}>
-                  <p style={{ margin: "1rem 0", fontWeight: "900" }}>
-                    SOUND RIGHT TO YOU?{" "}
-                  </p>
-                  <button
-                    className={styles.srty_btn}
-                    style={{
-                      margin: "0 1ch 0 1.5ch",
-                      backgroundColor: "#1d3336",
-                      color: "#ee7155",
-                    }}
-                  >
-                    YES
-                  </button>
-                  <button
-                    className={styles.srty_btn}
-                    style={{ backgroundColor: "#1d3336", color: "#ee7155" }}
-                  >
-                    NO
-                  </button>
-                </div>
+                {voted && (
+                  <Fade>
+                    <p style={{ margin: "1rem 0", fontWeight: "900" }}>
+                      THANK YOU!
+                    </p>
+                  </Fade>
+                )}
+                {!voted && (
+                  <div style={{ display: "flex", alignItems: "center" }}>
+                    <p style={{ margin: "1rem 0", fontWeight: "900" }}>
+                      SOUND RIGHT TO YOU?{" "}
+                    </p>
+                    <button
+                      className={styles.srty_btn}
+                      style={{
+                        margin: "0 1ch 0 1.5ch",
+                        backgroundColor: "#1d3336",
+                        color: "#ee7155",
+                      }}
+                      value="yes"
+                      onClick={handleSRTYClick}
+                    >
+                      YES
+                    </button>
+                    <button
+                      className={styles.srty_btn}
+                      style={{ backgroundColor: "#1d3336", color: "#ee7155" }}
+                      value="no"
+                      onClick={handleSRTYClick}
+                    >
+                      NO
+                    </button>
+                  </div>
+                )}
               </section>
             </Fade>
           )}
@@ -240,6 +274,14 @@ export default function TownSearch({
               </section>
             </Fade>
           )}
+          {/* {isConnected ? (
+            <h2 className="subtitle">You are connected to MongoDB</h2>
+          ) : (
+            <h2 className="subtitle">
+              You are NOT connected to MongoDB. Check the <code>README.md</code>{" "}
+              for instructions.
+            </h2>
+          )} */}
         </main>
         <Footer />
       </div>
