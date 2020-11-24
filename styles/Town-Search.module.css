@@ -68,7 +68,7 @@
   width: 45%;
   margin: 2rem 0;
   border: 2px solid #1d3336;
-  box-shadow: 5px 5px 8px;
+  /* box-shadow: 5px 5px 8px; */
   border-radius: 10px;
   background-color: white;
 }
