@@ -66,6 +66,9 @@ export default function TownSearch({
   //     return router.push("/");
   //   }
   // }, []);
+  function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
 
   function handleChange(e) {
     setError(false);
@@ -216,7 +219,6 @@ export default function TownSearch({
                       style={{
                         margin: "0 1ch 0 1.5ch",
                         backgroundColor: "#1d3336",
-                        color: "#ee7155",
                       }}
                       value="yes"
                       onClick={handleSRTYClick}
@@ -225,7 +227,7 @@ export default function TownSearch({
                     </button>
                     <button
                       className={styles.srty_btn}
-                      style={{ backgroundColor: "#1d3336", color: "#ee7155" }}
+                      style={{ backgroundColor: "#1d3336" }}
                       value="no"
                       onClick={handleSRTYClick}
                     >
@@ -260,10 +262,11 @@ export default function TownSearch({
                             fontSize: "1.5rem",
                             color: "#ee7155",
                             fontWeight: "bolder",
+                            textAlign: 'center'
                             // WebkitTextStroke: '0.15px black'
                           }}
                         >
-                          {townResults[val]}
+                          {val === 'Average Age' ? Math.round(townResults[val]) : val === 'Average House Price' ? `£${numberWithCommas(townResults[val])}` : val === 'Population Size' ? numberWithCommas(townResults[val]) : townResults[val]}
                         </p>
                         {/* <div > */}
                         {/* <button

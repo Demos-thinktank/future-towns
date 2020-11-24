@@ -52,9 +52,15 @@
   width: 100%;
   justify-content: space-evenly;
   align-items: center;
+  max-width: 1200px;
   /* min-height: 70vh; */
   /* align-content: space-between; */
   /* background-color: #2196F3; */
+  background-color: rgba(255,255,255,0.2);
+  border: 1px white solid;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: -3px 3px 8px
 }
 
 .card {
@@ -138,4 +144,5 @@
   font-weight: bold;
   background-color: #ee7155;
   border-radius: 5px;
+  color: white;
 }

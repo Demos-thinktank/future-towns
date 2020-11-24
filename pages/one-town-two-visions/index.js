@@ -145,7 +145,6 @@ const index = ({
                     style={{
                       margin: "0 1ch",
                       backgroundColor: "#1d3336",
-                      color: "#ee7155",
                     }}
                     value={answerValues[counter].yes}
                   >
@@ -158,7 +157,6 @@ const index = ({
                     style={{
                       margin: "0 1ch",
                       backgroundColor: "#1d3336",
-                      color: "#ee7155",
                     }}
                   >
                     NO
@@ -170,7 +168,6 @@ const index = ({
                     style={{
                       backgroundColor: "#1d3336",
                       margin: "0 1ch",
-                      color: "#ee7155",
                     }}
                   >
                     PASS/UNSURE
@@ -187,7 +184,7 @@ const index = ({
                   display: "flex",
                   alignItems: "center",
                   flexDirection: "column",
-                  backgroundColor: "#ee7155",
+                  backgroundColor: "whitesmoke",
                   color: "whitesmoke",
                   padding: "1rem",
                   border: "1px solid #1d3336",
@@ -203,7 +200,7 @@ const index = ({
                     fontWeight: "bold",
                     fontSize: "1.2rem",
                     margin: "0.5rem 0 1rem 0",
-                    backgroundColor: "whitesmoke",
+                    backgroundColor: "rgb(238, 113, 85)",
                     WebkitTextStroke: "0.5px",
                     padding: "0.1rem 0.5rem",
                     borderRadius: "3px",
