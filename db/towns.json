@@ -51,7 +51,7 @@
   {
     "Town": "Accrington",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 36400,
     "Average Age": 39.9173913,
     "Average House Price": 98000
@@ -99,7 +99,7 @@
   {
     "Town": "Aldridge",
     "Region": "West Midlands",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 39300,
     "Average Age": 38.2,
     "Average House Price": 199000
@@ -307,7 +307,7 @@
   {
     "Town": "Ashton-under-Lyne",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 47400,
     "Average Age": 40.1,
     "Average House Price": 127000
@@ -379,7 +379,7 @@
   {
     "Town": "Baildon",
     "Region": "Yorkshire and The Humber",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 15900,
     "Average Age": 36.5,
     "Average House Price": 218000
@@ -443,7 +443,7 @@
   {
     "Town": "Barnoldswick",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 10300,
     "Average Age": 39.7,
     "Average House Price": 131000
@@ -523,7 +523,7 @@
   {
     "Town": "Bath",
     "Region": "South West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 103400,
     "Average Age": 38.2,
     "Average House Price": 392000
@@ -539,7 +539,7 @@
   {
     "Town": "Batley",
     "Region": "Yorkshire and The Humber",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 83000,
     "Average Age": 37.9624,
     "Average House Price": 148000
@@ -603,7 +603,7 @@
   {
     "Town": "Bedworth",
     "Region": "West Midlands",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 30900,
     "Average Age": 41.3,
     "Average House Price": 166000
@@ -739,7 +739,7 @@
   {
     "Town": "Bilston",
     "Region": "West Midlands",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 34600,
     "Average Age": 37.88913043,
     "Average House Price": 131000
@@ -755,7 +755,7 @@
   {
     "Town": "Bingley",
     "Region": "Yorkshire and The Humber",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 22900,
     "Average Age": 36.5,
     "Average House Price": 185000
@@ -891,7 +891,7 @@
   {
     "Town": "Bloxwich",
     "Region": "West Midlands",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 51700,
     "Average Age": 38.2,
     "Average House Price": 138000
@@ -979,7 +979,7 @@
   {
     "Town": "Boston",
     "Region": "East Midlands",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 45600,
     "Average Age": 41.9,
     "Average House Price": 145000
@@ -1123,7 +1123,7 @@
   {
     "Town": "Brierfield",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 10300,
     "Average Age": 39.7,
     "Average House Price": 110000
@@ -1139,7 +1139,7 @@
   {
     "Town": "Brighouse",
     "Region": "Yorkshire and The Humber",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 33700,
     "Average Age": 42.2,
     "Average House Price": 161000
@@ -1203,7 +1203,7 @@
   {
     "Town": "Brownhills",
     "Region": "West Midlands",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 21200,
     "Average Age": 38.2,
     "Average House Price": 168000
@@ -1267,7 +1267,7 @@
   {
     "Town": "Burnley",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 83000,
     "Average Age": 40,
     "Average House Price": 104000
@@ -1291,7 +1291,7 @@
   {
     "Town": "Burton Latimer",
     "Region": "East Midlands",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 9700,
     "Average Age": 41.2,
     "Average House Price": 226000
@@ -1307,7 +1307,7 @@
   {
     "Town": "Bury",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 80300,
     "Average Age": 40.29123506,
     "Average House Price": 159000
@@ -1427,7 +1427,7 @@
   {
     "Town": "Canterbury",
     "Region": "South East",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 63200,
     "Average Age": 38.2,
     "Average House Price": 289000
@@ -1523,7 +1523,7 @@
   {
     "Town": "Chadderton",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 36100,
     "Average Age": 37.1,
     "Average House Price": 134000
@@ -1539,7 +1539,7 @@
   {
     "Town": "Chapeltown",
     "Region": "Yorkshire and The Humber",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 22500,
     "Average Age": 35.4,
     "Average House Price": 154000
@@ -1603,7 +1603,7 @@
   {
     "Town": "Cheltenham",
     "Region": "South West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 117800,
     "Average Age": 40.72864322,
     "Average House Price": 295000
@@ -1779,7 +1779,7 @@
   {
     "Town": "Clayton-le-Moors",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 8200,
     "Average Age": 39.8,
     "Average House Price": 104000
@@ -1795,7 +1795,7 @@
   {
     "Town": "Cleckheaton",
     "Region": "Yorkshire and The Humber",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 12000,
     "Average Age": 39.7,
     "Average House Price": 157000
@@ -1907,7 +1907,7 @@
   {
     "Town": "Colne",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 18900,
     "Average Age": 39.7,
     "Average House Price": 114000
@@ -1995,7 +1995,7 @@
   {
     "Town": "Cove Bay",
     "Region": "Scotland",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 6800,
     "Average Age": 37.3,
     "Average House Price": ""
@@ -2211,7 +2211,7 @@
   {
     "Town": "Darlaston",
     "Region": "West Midlands",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 20700,
     "Average Age": 38.05849057,
     "Average House Price": 132000
@@ -2235,7 +2235,7 @@
   {
     "Town": "Darwen",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 27300,
     "Average Age": 36.5,
     "Average House Price": 103000
@@ -2299,7 +2299,7 @@
   {
     "Town": "Desborough",
     "Region": "East Midlands",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 11500,
     "Average Age": 41.2,
     "Average House Price": 208000
@@ -2315,7 +2315,7 @@
   {
     "Town": "Dewsbury",
     "Region": "Yorkshire and The Humber",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 66500,
     "Average Age": 39.7,
     "Average House Price": 128000
@@ -2427,7 +2427,7 @@
   {
     "Town": "Droylsden",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 24200,
     "Average Age": 39.98888889,
     "Average House Price": 140000
@@ -2451,7 +2451,7 @@
   {
     "Town": "Dukinfield",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 21200,
     "Average Age": 40.1,
     "Average House Price": 144000
@@ -2491,7 +2491,7 @@
   {
     "Town": "Dundee",
     "Region": "Scotland",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 148200,
     "Average Age": 37.0540107,
     "Average House Price": ""
@@ -2611,7 +2611,7 @@
   {
     "Town": "Eccles",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 42900,
     "Average Age": 34.8,
     "Average House Price": 171000
@@ -2643,7 +2643,7 @@
   {
     "Town": "Elland",
     "Region": "Yorkshire and The Humber",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 16200,
     "Average Age": 42.2,
     "Average House Price": 141000
@@ -2739,7 +2739,7 @@
   {
     "Town": "Exeter",
     "Region": "South West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 124900,
     "Average Age": 33.6,
     "Average House Price": 250000
@@ -2755,7 +2755,7 @@
   {
     "Town": "Failsworth",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 18800,
     "Average Age": 37.1,
     "Average House Price": 146000
@@ -2819,7 +2819,7 @@
   {
     "Town": "Farnworth",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 28100,
     "Average Age": 38.9,
     "Average House Price": 109000
@@ -2995,7 +2995,7 @@
   {
     "Town": "Fulwood",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 35300,
     "Average Age": 35.3,
     "Average House Price": 168000
@@ -3019,7 +3019,7 @@
   {
     "Town": "Garforth",
     "Region": "Yorkshire and The Humber",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 14600,
     "Average Age": 35.3,
     "Average House Price": 206000
@@ -3219,7 +3219,7 @@
   {
     "Town": "Great Harwood",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 10900,
     "Average Age": 39.8,
     "Average House Price": 115000
@@ -3299,7 +3299,7 @@
   {
     "Town": "Guiseley",
     "Region": "Yorkshire and The Humber",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 12500,
     "Average Age": 35.3,
     "Average House Price": 272000
@@ -3355,7 +3355,7 @@
   {
     "Town": "Halifax",
     "Region": "Yorkshire and The Humber",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 91900,
     "Average Age": 42.2,
     "Average House Price": 118000
@@ -3443,7 +3443,7 @@
   {
     "Town": "Hastings",
     "Region": "South East",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 93700,
     "Average Age": 43.49326923,
     "Average House Price": 231000
@@ -3451,7 +3451,7 @@
   {
     "Town": "Hatfield",
     "Region": "East of England",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 45400,
     "Average Age": 35.7,
     "Average House Price": 324000
@@ -3499,7 +3499,7 @@
   {
     "Town": "Haxby",
     "Region": "Yorkshire and The Humber",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 11700,
     "Average Age": 37.7,
     "Average House Price": 272000
@@ -3563,7 +3563,7 @@
   {
     "Town": "Heckmondwike",
     "Region": "Yorkshire and The Humber",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 12600,
     "Average Age": 39.7,
     "Average House Price": 117000
@@ -3643,7 +3643,7 @@
   {
     "Town": "Herne Bay",
     "Region": "South East",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 40600,
     "Average Age": 38.2,
     "Average House Price": 289000
@@ -3691,7 +3691,7 @@
   {
     "Town": "Heysham",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 16700,
     "Average Age": 39.5,
     "Average House Price": 139000
@@ -3699,7 +3699,7 @@
   {
     "Town": "Heywood",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 30300,
     "Average Age": 38.1,
     "Average House Price": 134000
@@ -3811,7 +3811,7 @@
   {
     "Town": "Holmfirth",
     "Region": "Yorkshire and The Humber",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 22000,
     "Average Age": 39.7,
     "Average House Price": 206000
@@ -3883,7 +3883,7 @@
   {
     "Town": "Horsforth",
     "Region": "Yorkshire and The Humber",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 19500,
     "Average Age": 35.3,
     "Average House Price": 273000
@@ -3899,7 +3899,7 @@
   {
     "Town": "Horwich",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 19700,
     "Average Age": 38.9,
     "Average House Price": 162000
@@ -3947,7 +3947,7 @@
   {
     "Town": "Huddersfield",
     "Region": "Yorkshire and The Humber",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 171500,
     "Average Age": 39.71442308,
     "Average House Price": 145000
@@ -3987,7 +3987,7 @@
   {
     "Town": "Hyde (Tameside)",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 35500,
     "Average Age": 40.1,
     "Average House Price": 159000
@@ -4027,7 +4027,7 @@
   {
     "Town": "Ilkley",
     "Region": "Yorkshire and The Humber",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 14800,
     "Average Age": 36.5,
     "Average House Price": 417000
@@ -4099,7 +4099,7 @@
   {
     "Town": "Irlam",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 20400,
     "Average Age": 34.8,
     "Average House Price": 153000
@@ -4155,7 +4155,7 @@
   {
     "Town": "Kearsley",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 11200,
     "Average Age": 38.9,
     "Average House Price": 128000
@@ -4163,7 +4163,7 @@
   {
     "Town": "Keighley",
     "Region": "Yorkshire and The Humber",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 53400,
     "Average Age": 36.5,
     "Average House Price": 117000
@@ -4187,7 +4187,7 @@
   {
     "Town": "Kenilworth",
     "Region": "West Midlands",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 21700,
     "Average Age": 39.7,
     "Average House Price": 353000
@@ -4203,7 +4203,7 @@
   {
     "Town": "Kettering",
     "Region": "East Midlands",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 60300,
     "Average Age": 41.2,
     "Average House Price": 190000
@@ -4211,7 +4211,7 @@
   {
     "Town": "Keynsham BUA in Conurbation",
     "Region": "South West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": "",
     "Average Age": 38.2,
     "Average House Price": 304000
@@ -4331,7 +4331,7 @@
   {
     "Town": "Kippax",
     "Region": "Yorkshire and The Humber",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 9600,
     "Average Age": 35.3,
     "Average House Price": 164000
@@ -4411,7 +4411,7 @@
   {
     "Town": "Lancaster",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 51300,
     "Average Age": 39.5,
     "Average House Price": 146000
@@ -4475,7 +4475,7 @@
   {
     "Town": "Lees",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 12900,
     "Average Age": 37.1,
     "Average House Price": 159000
@@ -4603,7 +4603,7 @@
   {
     "Town": "Little Lever",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 12500,
     "Average Age": 39.1,
     "Average House Price": 152000
@@ -4611,7 +4611,7 @@
   {
     "Town": "Littleborough",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 12100,
     "Average Age": 38.1,
     "Average House Price": 154000
@@ -4635,7 +4635,7 @@
   {
     "Town": "Liversedge",
     "Region": "Yorkshire and The Humber",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 18100,
     "Average Age": 39.7,
     "Average House Price": 159000
@@ -5035,7 +5035,7 @@
   {
     "Town": "Meltham",
     "Region": "Yorkshire and The Humber",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 8000,
     "Average Age": 39.7,
     "Average House Price": 189000
@@ -5083,7 +5083,7 @@
   {
     "Town": "Middleton (Rochdale)",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 44400,
     "Average Age": 38.1,
     "Average House Price": 142000
@@ -5107,7 +5107,7 @@
   {
     "Town": "Midsomer Norton",
     "Region": "South West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 13700,
     "Average Age": 38.2,
     "Average House Price": 255000
@@ -5139,7 +5139,7 @@
   {
     "Town": "Milnrow",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 10200,
     "Average Age": 38.1,
     "Average House Price": 141000
@@ -5163,7 +5163,7 @@
   {
     "Town": "Mirfield",
     "Region": "Yorkshire and The Humber",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 19800,
     "Average Age": 39.7,
     "Average House Price": 173000
@@ -5203,7 +5203,7 @@
   {
     "Town": "Morecambe",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 33600,
     "Average Age": 39.5,
     "Average House Price": 130000
@@ -5211,7 +5211,7 @@
   {
     "Town": "Morley",
     "Region": "Yorkshire and The Humber",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 30000,
     "Average Age": 35.3,
     "Average House Price": 159000
@@ -5227,7 +5227,7 @@
   {
     "Town": "Mossley",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 11200,
     "Average Age": 40.1,
     "Average House Price": 142000
@@ -5339,7 +5339,7 @@
   {
     "Town": "Nelson (Pendle)",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 31200,
     "Average Age": 39.7,
     "Average House Price": 67000
@@ -5355,7 +5355,7 @@
   {
     "Town": "New Addington",
     "Region": "London",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 23000,
     "Average Age": 37.7,
     "Average House Price": 296000
@@ -5451,7 +5451,7 @@
   {
     "Town": "Newport",
     "Region": "Wales",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 134900,
     "Average Age": 38.8,
     "Average House Price": ""
@@ -5467,7 +5467,7 @@
   {
     "Town": "Newport (Telford and Wrekin)",
     "Region": "West Midlands",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 13400,
     "Average Age": 39.5,
     "Average House Price": 212000
@@ -5675,7 +5675,7 @@
   {
     "Town": "Oldbury (Sandwell)",
     "Region": "West Midlands",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 25600,
     "Average Age": 36.7,
     "Average House Price": 143000
@@ -5683,7 +5683,7 @@
   {
     "Town": "Oldham",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 107000,
     "Average Age": 37.1,
     "Average House Price": 101000
@@ -5707,7 +5707,7 @@
   {
     "Town": "Oswaldtwistle",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 11400,
     "Average Age": 39.8,
     "Average House Price": 117000
@@ -5715,7 +5715,7 @@
   {
     "Town": "Otley",
     "Region": "Yorkshire and The Humber",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 14900,
     "Average Age": 35.788,
     "Average House Price": 233000
@@ -5931,7 +5931,7 @@
   {
     "Town": "Plymstock",
     "Region": "South West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 25900,
     "Average Age": 38.90352941,
     "Average House Price": 232000
@@ -6179,7 +6179,7 @@
   {
     "Town": "Pudsey",
     "Region": "Yorkshire and The Humber",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 33800,
     "Average Age": 35.3,
     "Average House Price": 173000
@@ -6195,7 +6195,7 @@
   {
     "Town": "Radcliffe",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 31500,
     "Average Age": 40.3,
     "Average House Price": 140000
@@ -6219,7 +6219,7 @@
   {
     "Town": "Radstock",
     "Region": "South West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 10200,
     "Average Age": 38.2,
     "Average House Price": 209000
@@ -6235,7 +6235,7 @@
   {
     "Town": "Ramsbottom",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 17700,
     "Average Age": 40.37586207,
     "Average House Price": 207000
@@ -6299,7 +6299,7 @@
   {
     "Town": "Redditch",
     "Region": "West Midlands",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 82800,
     "Average Age": 40.2311284,
     "Average House Price": 203000
@@ -6435,7 +6435,7 @@
   {
     "Town": "Rochdale",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 112800,
     "Average Age": 38.1,
     "Average House Price": 130000
@@ -6499,7 +6499,7 @@
   {
     "Town": "Rothwell",
     "Region": "East Midlands",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 27600,
     "Average Age": 41.2,
     "Average House Price": 189000
@@ -6507,7 +6507,7 @@
   {
     "Town": "Rothwell",
     "Region": "Yorkshire and The Humber",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 27600,
     "Average Age": 35.3,
     "Average House Price": 189000
@@ -6531,7 +6531,7 @@
   {
     "Town": "Royal Leamington Spa",
     "Region": "West Midlands",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 57800,
     "Average Age": 39.7,
     "Average House Price": 310000
@@ -6563,7 +6563,7 @@
   {
     "Town": "Royton",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 23100,
     "Average Age": 37.1375,
     "Average House Price": 150000
@@ -6851,7 +6851,7 @@
   {
     "Town": "Shaw (Oldham)",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 18300,
     "Average Age": 37.1,
     "Average House Price": 144000
@@ -6899,7 +6899,7 @@
   {
     "Town": "Shipley",
     "Region": "Yorkshire and The Humber",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 28700,
     "Average Age": 36.5,
     "Average House Price": 155000
@@ -6963,7 +6963,7 @@
   {
     "Town": "Silsden",
     "Region": "Yorkshire and The Humber",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 8000,
     "Average Age": 36.5,
     "Average House Price": 193000
@@ -7019,7 +7019,7 @@
   {
     "Town": "Smethwick",
     "Region": "West Midlands",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 53000,
     "Average Age": 36.7,
     "Average House Price": 161000
@@ -7099,7 +7099,7 @@
   {
     "Town": "South Queensferry",
     "Region": "Scotland",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 8900,
     "Average Age": 36.5,
     "Average House Price": ""
@@ -7267,7 +7267,7 @@
   {
     "Town": "Stalybridge",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 27000,
     "Average Age": 40.1,
     "Average House Price": 165000
@@ -7371,7 +7371,7 @@
   {
     "Town": "Stocksbridge",
     "Region": "Yorkshire and The Humber",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 13000,
     "Average Age": 35.4,
     "Average House Price": 145000
@@ -7571,7 +7571,7 @@
   {
     "Town": "Swinton",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 25400,
     "Average Age": 34.8,
     "Average House Price": 184000
@@ -7643,7 +7643,7 @@
   {
     "Town": "Telford",
     "Region": "West Midlands",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 150800,
     "Average Age": 39.5,
     "Average House Price": 154000
@@ -7771,7 +7771,7 @@
   {
     "Town": "Tipton",
     "Region": "West Midlands",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 45200,
     "Average Age": 36.7,
     "Average House Price": 134000
@@ -7803,7 +7803,7 @@
   {
     "Town": "Todmorden",
     "Region": "Yorkshire and The Humber",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 12200,
     "Average Age": 42.2,
     "Average House Price": 139000
@@ -7995,7 +7995,7 @@
   {
     "Town": "Uppermill",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 13700,
     "Average Age": 37.1,
     "Average House Price": 242000
@@ -8075,7 +8075,7 @@
   {
     "Town": "Walsall",
     "Region": "West Midlands",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 72500,
     "Average Age": 38.2,
     "Average House Price": 165000
@@ -8155,7 +8155,7 @@
   {
     "Town": "Warwick",
     "Region": "West Midlands",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 33300,
     "Average Age": 39.7,
     "Average House Price": 281000
@@ -8195,7 +8195,7 @@
   {
     "Town": "Wednesbury",
     "Region": "West Midlands",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 19400,
     "Average Age": 36.7,
     "Average House Price": 144000
@@ -8203,7 +8203,7 @@
   {
     "Town": "Wednesfield",
     "Region": "West Midlands",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 25400,
     "Average Age": 37.8,
     "Average House Price": 148000
@@ -8259,7 +8259,7 @@
   {
     "Town": "West Bromwich",
     "Region": "West Midlands",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 78400,
     "Average Age": 36.70681818,
     "Average House Price": 144000
@@ -8267,7 +8267,7 @@
   {
     "Town": "West Bromwich (East)",
     "Region": "West Midlands",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 20200,
     "Average Age": 36.7,
     "Average House Price": 188000
@@ -8315,7 +8315,7 @@
   {
     "Town": "Westhoughton",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 23900,
     "Average Age": 38.9,
     "Average House Price": 160000
@@ -8331,7 +8331,7 @@
   {
     "Town": "Wetherby",
     "Region": "Yorkshire and The Humber",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 11200,
     "Average Age": 35.3,
     "Average House Price": 308000
@@ -8403,7 +8403,7 @@
   {
     "Town": "Whitefield",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 21200,
     "Average Age": 40.3,
     "Average House Price": 200000
@@ -8427,7 +8427,7 @@
   {
     "Town": "Whitnash",
     "Region": "West Midlands",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 8000,
     "Average Age": 39.7,
     "Average House Price": 256000
@@ -8435,7 +8435,7 @@
   {
     "Town": "Whitstable",
     "Region": "South East",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 33200,
     "Average Age": 38.2,
     "Average House Price": 358000
@@ -8683,7 +8683,7 @@
   {
     "Town": "Worsley",
     "Region": "North West",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 9100,
     "Average Age": 34.8,
     "Average House Price": 260000
@@ -8755,7 +8755,7 @@
   {
     "Town": "Yeadon",
     "Region": "Yorkshire and The Humber",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 19200,
     "Average Age": 35.3,
     "Average House Price": 222000
@@ -8771,7 +8771,7 @@
   {
     "Town": "York",
     "Region": "Yorkshire and The Humber",
-    "Town Type": "Satellite towns",
+    "Town Type": "Hub-and-spoke towns",
     "Population Size": 163600,
     "Average Age": 37.7,
     "Average House Price": 241000

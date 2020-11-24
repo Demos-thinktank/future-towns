@@ -110,7 +110,7 @@ export default function TownSearch({
   }
 
     let x = townResults && typologyData[townResults["Town Type"].toLowerCase()]
-  console.log('bi',x)
+  // console.log('bi',x)
   // console.log(typologyData['Rural towns'])
   // console.log(townResults && townResults["Town Type"].toLowerCase())
 
@@ -188,7 +188,7 @@ export default function TownSearch({
             {townResults && (
               <Fade>
                 <h2 className={styles.h2}>
-                  {townResults.Town.toUpperCase()} IS A{/[aeiou]/i.test(townResults["Town Type"].trim()[0]) && "N"} {townResults["Town Type"].toUpperCase().slice(0, -1)}
+                  {townResults.Town.toUpperCase()} IS A{/[aeio]/i.test(townResults["Town Type"].trim()[0]) && "N"} {townResults["Town Type"].toUpperCase().slice(0, -1)}
                 </h2>
               </Fade>
             )}
@@ -197,9 +197,9 @@ export default function TownSearch({
             <Fade>
               <section>
                 <p style={{ margin: "1.5rem 0px 0.25rem 0", fontSize: "1.2rem" }}>
-                  WHAT MAKES A{/[aeiou]/i.test(townResults["Town Type"].trim()[0]) && "N"} {townResults["Town Type"].toUpperCase().slice(0, -1)}?
+                  WHAT MAKES A{/[aeio]/i.test(townResults["Town Type"].trim()[0]) && "N"} {townResults["Town Type"].toUpperCase().slice(0, -1)}?
                 </p>
-                <p>
+                <p style={{maxWidth: '1200px'}}>
                   {typologyData[(townResults["Town Type"].toLowerCase())]}
                 </p>
                 {voted && (
