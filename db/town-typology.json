@@ -1,0 +1,9 @@
+{
+    "types": {
+            "affluent towns": "Affluent towns are more prosperous, typically have an older population and are less ethnically diverse than average. They are more likely to be found in rural areas.",
+            "coastal towns": "Coastal towns are defined by their geography, they also  tend to have an older population than average.",
+            "ex-industrial towns": "Ex-Industrial towns are towns whose traditional industries have disappeared. A greater proportion of people here work in manufacturing.",
+            "rural towns": "Towns in rural areas that are less well off than affluent towns and do not have a coastline.",
+            "hub-and-spoke towns": "Hub-and-spoke towns are comparatively urban towns that are often satellite towns of bigger cities, or are hub towns with their own satellites. These towns have higher levels of ethnic diversity."
+    }
+}

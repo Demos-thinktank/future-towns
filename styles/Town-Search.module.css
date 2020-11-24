@@ -28,7 +28,8 @@
 
 .h2 {
   margin-bottom: 0.5rem;
-  -webkit-text-stroke: 0.25px;
+  -webkit-text-stroke: 1.25px;
+  font-size: 1.5rem
 }
 
 .town_input {
@@ -58,7 +59,7 @@
 
 .card {
   display: flex;
-  width: 30%;
+  width: 45%;
   margin: 2rem 0;
   border: 2px solid #1d3336;
   box-shadow: 5px 5px 8px;

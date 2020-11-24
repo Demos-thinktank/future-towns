@@ -60,7 +60,7 @@ const index = ({
   const groupB = {
     title: "GROUP B",
     text:
-      "Group A are characterised by their opposition to greater diversity in their town and are worried about their town losing its identity. They are relaxed about ageing population in towns and are less supportive of new jobs and homes in their town. Preservers/keepers prioritise a sense of community over access to amenities and services. Preservers/keepers are more likely to be older, Leave and Conservative supporting and in the south of England.",
+      "Group B are characterised by their opposition to greater diversity in their town and are worried about their town losing its identity. They are relaxed about ageing population in towns and are less supportive of new jobs and homes in their town. Preservers/keepers prioritise a sense of community over access to amenities and services. Preservers/keepers are more likely to be older, Leave and Conservative supporting and in the south of England.",
   };
 
   return (

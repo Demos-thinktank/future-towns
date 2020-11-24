@@ -29,11 +29,15 @@ export const getStaticProps = async () => {
   const towns = fileContents.towns.map((val) => val["Town"].toUpperCase());
   const data = fileContents.towns;
 
+ const typologyfilePath = path.join(dbDirectory, "town-typology.json");
+  const typologyfileContents = JSON.parse(fs.readFileSync(typologyfilePath, "utf8"));
+  const typologyData = typologyfileContents.types;
+
   // const { client } = await connectToDatabase();
   // const isConnected = await client.isConnected(); // Returns true or false
 
   return {
-    props: { towns: towns, data },
+    props: { towns: towns, data, typologyData },
   };
 };
 
@@ -42,9 +46,11 @@ export default function TownSearch({
   towns,
   selectedTownIndex,
   setSelectedTownIndex,
+  typologyData
 }) {
   // console.log(data[selectedTownIndex].Town);
   // console.log(data, towns);
+
 
   const [townResults, setTownResults] = useState(
     selectedTownIndex || selectedTownIndex === 0 ? data[selectedTownIndex] : ""
@@ -77,10 +83,12 @@ export default function TownSearch({
     }
   }
 
-  function handleClick() {
+  function handleClick(e) {
+    if(e.keyCode == 8) return
     if (selectedTownIndex || selectedTownIndex === 0) {
       setTownResults(data[selectedTownIndex]);
-    } else {
+    }  
+     else {
       setError(true);
     }
   }
@@ -97,6 +105,11 @@ export default function TownSearch({
     await axios.post("/api/srty", srtyAnswer);
     // .then((res) => console.log(res.data));
   }
+
+    let x = townResults && typologyData[townResults["Town Type"].toLowerCase()]
+  console.log('bi',x)
+  // console.log(typologyData['Rural towns'])
+  // console.log(townResults && townResults["Town Type"].toLowerCase())
 
   return (
     <div>
@@ -172,7 +185,7 @@ export default function TownSearch({
             {townResults && (
               <Fade>
                 <h2 className={styles.h2}>
-                  {townResults.Town} is a [RURAL TOWN]
+                  {townResults.Town.toUpperCase()} IS A{/[aeiou]/i.test(townResults["Town Type"].trim()[0]) && "N"} {townResults["Town Type"].toUpperCase().slice(0, -1)}
                 </h2>
               </Fade>
             )}
@@ -180,18 +193,11 @@ export default function TownSearch({
           {townResults && (
             <Fade>
               <section>
-                <p style={{ margin: "0.25rem 0", fontSize: "1.2rem" }}>
-                  WHAT MAKES A [RURAL TOWN?]
+                <p style={{ margin: "1.5rem 0px 0.25rem 0", fontSize: "1.2rem" }}>
+                  WHAT MAKES A{/[aeiou]/i.test(townResults["Town Type"].trim()[0]) && "N"} {townResults["Town Type"].toUpperCase().slice(0, -1)}?
                 </p>
                 <p>
-                  [Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.]
+                  {typologyData[(townResults["Town Type"].toLowerCase())]}
                 </p>
                 {voted && (
                   <Fade>
@@ -203,7 +209,7 @@ export default function TownSearch({
                 {!voted && (
                   <div style={{ display: "flex", alignItems: "center" }}>
                     <p style={{ margin: "1rem 0", fontWeight: "900" }}>
-                      SOUND RIGHT TO YOU?{" "}
+                      SOUND RIGHT TO YOU?
                     </p>
                     <button
                       className={styles.srty_btn}
@@ -235,7 +241,9 @@ export default function TownSearch({
               <section className={styles.container}>
                 {Object.keys(townResults)
                   .slice(1)
-                  .map((val, i) => (
+                  .map((val, i) => {
+                    if(townResults[val])
+                    return (
                     <section className={styles.card} key={i}>
                       <div className={styles.card_image_div}>
                         <img
@@ -270,7 +278,7 @@ export default function TownSearch({
                   
                 </div> */}
                     </section>
-                  ))}
+                  )})}
               </section>
             </Fade>
           )}
