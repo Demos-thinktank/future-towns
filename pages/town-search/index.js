@@ -124,6 +124,7 @@ export default function TownSearch({
       <div className={styles.page}>
         <Nav />
         <main className={styles.main}>
+        <div style={{ margin: 'auto', maxWidth: 'max-content'}} >
           <header className={styles.header}>
             {/* <div style={{width: 'max-content'}}> */}
             <div
@@ -137,8 +138,8 @@ export default function TownSearch({
                 WHAT KIND OF TOWN IS...
               </h1>
               {/* {townResults && ( */}
-              <div style={{ display: "flex", flexDirection: "column" }}>
-                <div style={{ display: "flex", maxWidth: "100%" }}>
+              <span style={{ display: "flex", flexDirection: "column", maxWidth: "max-content" }}>
+                <div style={{ display: "flex", maxWidth: "max-content" }}>
                   <input
                     className={`${styles.h1_size} ${styles.town_input}`}
                     type="text"
@@ -167,23 +168,26 @@ export default function TownSearch({
                     <img src="/images/search.svg" />
                   </button>
                 </div>
-                <div
+              </span>
+              {/* // )} */}
+            </div>
+    <p
                   style={{
-                    visibility: error ? "visible" : "hidden",
-                    textAlign: "center",
+                    display: error ? "block" : "none",
+                    // textAlign: "right",
+                    // width: 'max-content',
                     color: "#1d3336",
-                    // marginBottom: "1rem",
+                    margin: "0 auto 0.2rem auto",
                     // marginRight: "2.8rem",
                     fontWeight: "900",
                     fontSize: "1.1rem",
                   }}
                 >
-                  Please try again!
-                </div>
-              </div>
-              {/* // )} */}
-            </div>
-
+                  Sorry, we don't define that place as a town. To find out more about how we define towns click here [INSERT LINK TO RELEVANT BIT OF PDF REPORT]
+                  {/* Sorry - that place doesn’t fit our town definition
+                  Sorry - that place doesn’t fit our town definition
+                  Sorry - that place doesn’t fit our town definition */}
+                </p>
             {/* </div> */}
             {townResults && (
               <Fade>
@@ -196,7 +200,7 @@ export default function TownSearch({
           {townResults && (
             <Fade>
               <section>
-                <p style={{ margin: "1.5rem 0px 0.25rem 0", fontSize: "1.2rem" }}>
+                <p style={{ margin: "1rem 0px 0.25rem 0", fontSize: "1.2rem" }}>
                   WHAT MAKES A{/[aeio]/i.test(townResults["Town Type"].trim()[0]) && "N"} {townResults["Town Type"].toUpperCase().slice(0, -1)}?
                 </p>
                 <p style={{maxWidth: '1200px'}}>
@@ -293,6 +297,7 @@ export default function TownSearch({
               for instructions.
             </h2>
           )} */}
+          </div>
         </main>
         <Footer />
       </div>

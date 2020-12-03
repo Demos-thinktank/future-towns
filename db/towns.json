@@ -1401,14 +1401,6 @@
     "Average House Price": 307000
   },
   {
-    "Town": "Cambridge",
-    "Region": "East of England",
-    "Town Type": "University towns",
-    "Population Size": "",
-    "Average Age": 32.3561086,
-    "Average House Price": 477000
-  },
-  {
     "Town": "Cambuslang",
     "Region": "Scotland",
     "Town Type": "Ex-industrial towns",
@@ -1823,14 +1815,6 @@
     "Population Size": 10700,
     "Average Age": 49.7375,
     "Average House Price": 135000
-  },
-  {
-    "Town": "Clifton (City of Nottingham)",
-    "Region": "East Midlands",
-    "Town Type": "University towns",
-    "Population Size": "",
-    "Average Age": 29.7,
-    "Average House Price": 137000
   },
   {
     "Town": "Clitheroe",
@@ -5721,14 +5705,6 @@
     "Average House Price": 233000
   },
   {
-    "Town": "Oxford",
-    "Region": "South East",
-    "Town Type": "University towns",
-    "Population Size": "",
-    "Average Age": 29.89805616,
-    "Average House Price": 470000
-  },
-  {
     "Town": "Oxted",
     "Region": "South East",
     "Town Type": "Affluent towns",
@@ -6087,14 +6063,6 @@
     "Population Size": 8600,
     "Average Age": 44,
     "Average House Price": ""
-  },
-  {
-    "Town": "Portslade-by-Sea",
-    "Region": "South East",
-    "Town Type": "University towns",
-    "Population Size": "",
-    "Average Age": 35.45757576,
-    "Average House Price": 310000
   },
   {
     "Town": "Potters Bar",
@@ -6639,14 +6607,6 @@
     "Population Size": 16800,
     "Average Age": 43.9,
     "Average House Price": 351000
-  },
-  {
-    "Town": "Sale",
-    "Region": "North West",
-    "Town Type": "University towns",
-    "Population Size": "",
-    "Average Age": 34.86162528,
-    "Average House Price": 225000
   },
   {
     "Town": "Salford",
@@ -8623,14 +8583,6 @@
     "Population Size": 11600,
     "Average Age": "",
     "Average House Price": 308000
-  },
-  {
-    "Town": "Woodingdean",
-    "Region": "South East",
-    "Town Type": "University towns",
-    "Population Size": "",
-    "Average Age": 35.3,
-    "Average House Price": 355000
   },
   {
     "Town": "Woodley",

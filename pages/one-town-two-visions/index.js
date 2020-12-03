@@ -11,6 +11,7 @@ import Zoom from "react-reveal/Fade";
 import { useEffect, useState } from "react";
 // import Questionnaire from "../../components/Questionnaire";
 import Gauge from "../../components/Gauge";
+import Demographics from "../../components/Demographics";
 import Footer from "../../components/Footer";
 
 export const getStaticProps = async () => {
@@ -52,15 +53,15 @@ const index = ({
   }
 
   const groupA = {
-    title: "GROUP A",
+    title: "EARLY ADOPTER",
     text:
-      "Group A are characterised by their support for greater diversity in their town and are more relaxed about the character of their town changing. They are worried about ageing in towns and strongly support the creation of new jobs and homes. Changers prioritise access to amenities and services over a sense of community. Changers are more likely to be younger, Remain-supporting and are evenly split between voting Conservative and Labour.",
+      "Early adopters are characterised by their support for greater diversity in their town. They are worried about ageing in towns and strongly support the creation of new jobs and homes. They prioritise access to amenities and services over a sense of community. They are more likely to be younger, Remain-supporting and are evenly split between voting Conservative and Labour.",
   };
 
   const groupB = {
-    title: "GROUP B",
+    title: "PRESERVER",
     text:
-      "Group B are characterised by their opposition to greater diversity in their town and are worried about their town losing its identity. They are relaxed about ageing population in towns and are less supportive of new jobs and homes in their town. Preservers/keepers prioritise a sense of community over access to amenities and services. Preservers/keepers are more likely to be older, Leave and Conservative supporting and in the south of England.",
+      "Preservers are characterised by their opposition to greater diversity in their town and are worried about their town losing its identity. They are less concerned about ageing population in towns and are less supportive of new jobs and homes in their town. They prioritise a sense of community over access to amenities and services. They are more likely to be older, Leave and Conservative supporting and in the south of England.",
   };
 
   return (
@@ -193,7 +194,7 @@ const index = ({
                 }}
               >
                 <p style={{ fontWeight: "bold", WebkitTextStroke: "0.5px" }}>
-                  YOU ARE
+                  YOU ARE A{state.reduce((a, c) => a + c, 50) > 50 ? 'N': ''}
                 </p>
                 <p
                   style={{
@@ -216,10 +217,16 @@ const index = ({
                     ? groupA.text
                     : groupB.text}
                 </p>
+              <br />
+              <br />
+              <p style={{ fontWeight: "bold" }}>See the pie chart below to take a closer look at the two town groups.</p>
               </div>
             </Zoom>
           )}
           <Gauge score={state.reduce((a, c) => a + c, 50)} />
+          {counter == 12 && (
+            <Demographics group={state.reduce((a, c) => a + c, 50) > 50 ? 'A': 'B'} />
+          )}
         </main>
         <Footer />
       </div>
