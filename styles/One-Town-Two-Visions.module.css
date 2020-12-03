@@ -38,9 +38,23 @@
   color: white;
 }
 
+.poll_result {
+  min-height: 15rem;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: whitesmoke;
+  color: whitesmoke;
+  padding: 1rem;
+  border: 1px solid #1d3336;
+  border-radius: 15px;
+  box-shadow: 1px 1px 6px #1d3336;
+}
 
 @media only screen and (max-width: 768px) {
-  .question_card {
+  .question_card, .poll_result {
     width: 100% !important
   }
 }

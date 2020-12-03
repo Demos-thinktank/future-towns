@@ -179,20 +179,7 @@ const index = ({
           )}
           {counter == 12 && (
             <Zoom>
-              <div
-                style={{
-                  minHeight: "15rem",
-                  display: "flex",
-                  alignItems: "center",
-                  flexDirection: "column",
-                  backgroundColor: "whitesmoke",
-                  color: "whitesmoke",
-                  padding: "1rem",
-                  border: "1px solid #1d3336",
-                  borderRadius: "15px",
-                  boxShadow: "1px 1px 6px #1d3336",
-                }}
-              >
+              <div className={styles.poll_result}>
                 <p style={{ fontWeight: "bold", WebkitTextStroke: "0.5px" }}>
                   YOU ARE A{state.reduce((a, c) => a + c, 50) > 50 ? 'N': ''}
                 </p>

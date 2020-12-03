@@ -408,13 +408,13 @@ const RoseDiagram = ({selectedCategory, selectedGroup}) => {
 };
 
     return (
-    <div style={{overflow: 'hidden'}}>
+    // <div style={{overflow: 'hidden'}}>
       <ReactEcharts
         option={option}
         notMerge={true}
         lazyUpdate={true}
       />
-    </div>
+    // </div>
     )
 }
 

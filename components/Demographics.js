@@ -39,7 +39,7 @@ const Demographics = ({group}) => {
             </div>
           </div>
           <div className='pieChart'>
-            <RoseDiagram selectedGroup={selectedGroup} selectedCategory={selectedCategory} style={{marginBottom: '5rem'}}/>
+            <RoseDiagram selectedGroup={selectedGroup} selectedCategory={selectedCategory} />
           </div>   
              <style jsx>{`
             .selected-group {
@@ -53,7 +53,8 @@ const Demographics = ({group}) => {
               align-items: center;
             }
             .pieChart {
-              margin: 1rem 0 3rem 0;
+              max-width: 768px;
+              margin: 1rem auto 3rem;
               border: 1px solid rgb(29, 51, 54);
               border-radius: 15px;
               box-shadow: rgb(29, 51, 54) 1px 1px 6px;
