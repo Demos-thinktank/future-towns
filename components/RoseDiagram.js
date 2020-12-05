@@ -371,7 +371,7 @@ const RoseDiagram = ({selectedCategory, selectedGroup}) => {
     backgroundColor: 'whitesmoke',
     tooltip: {
         trigger: 'item',
-        formatter: '{a} <br/>{b}: {d}%',
+        formatter: '{a}: {b} <br/> {c}%',
         // position: ['50%', '50%']
     },
     series: [
@@ -393,7 +393,7 @@ const RoseDiagram = ({selectedCategory, selectedGroup}) => {
                 padding: 4
             },
             itemStyle: {
-                borderWidth: 1,
+                borderWidth: 2,
                 borderColor: 'whitesmoke',
                 borderStyle: 'solid'
             },
@@ -408,13 +408,11 @@ const RoseDiagram = ({selectedCategory, selectedGroup}) => {
 };
 
     return (
-    // <div style={{overflow: 'hidden'}}>
       <ReactEcharts
         option={option}
         notMerge={true}
         lazyUpdate={true}
       />
-    // </div>
     )
 }
 
