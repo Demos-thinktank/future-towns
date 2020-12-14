@@ -27,7 +27,10 @@ const Footer = () => {
             }}
           />
         </a>
-        <a href="https://home.kpmg/" target="blank">
+        <a
+          href="https://home.kpmg/uk/en/home/insights/2020/12/the-future-of-towns.html"
+          target="blank"
+        >
           <img
             src="/images/kpmg-logo.png"
             style={{
@@ -42,12 +45,14 @@ const Footer = () => {
           margin: "0.5rem auto 1rem auto",
           color: "white",
           fontSize: "0.9rem",
-          display: 'flex',
-          justifyContent: 'center',
+          display: "flex",
+          justifyContent: "center",
         }}
       >
-        <a href='https://demos.co.uk/about/contact/' target='blank'>Contact Us</a>
-        <p style={{color: 'white', margin: '0 0.5rem'}}>|</p>
+        <a href="https://demos.co.uk/about/contact/" target="blank">
+          Contact Us
+        </a>
+        <p style={{ color: "white", margin: "0 0.5rem" }}>|</p>
         <Link href="/privacy-policy">
           <a>Privacy Policy</a>
         </Link>
