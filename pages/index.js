@@ -80,9 +80,7 @@ export default function Home({
               Demos and KPMG have been investigating what the public want the
               future of towns in the UK to look like.
             </p>
-            <Link href="/">
-              <a className={styles.section_link}>READ THE REPORT</a>
-            </Link>
+              <a className={styles.section_link} href='https://demos.co.uk/project/the-future-of-towns/' target='blank'>READ THE REPORT</a>
           </div>
         </div>
         <div className={styles.tot_section}>

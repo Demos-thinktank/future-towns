@@ -166,8 +166,11 @@ export default function TownSearch({
                 }}
               >
                 Sorry, we don't define that place as a town. To find out more
-                about how we define towns click here [INSERT LINK TO RELEVANT
-                BIT OF PDF REPORT]
+                about how we define towns click <a 
+                href="https://demos.co.uk/project/the-future-of-towns/" 
+                style={{textDecoration: 'underline'}}
+                target='blank'
+                >here</a>
               </p>
               {townResults && (
                 <Fade>
