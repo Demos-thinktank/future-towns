@@ -32,23 +32,19 @@ const index = () => {
           <p style={{ fontWeight: "900", fontSize: "1.2rem" }}>
             DEMOS PRIVACY POLICY
           </p>
-          {/* <br /> */}
           <br />
           <p>
             Demos follows the relevant legal requirements and takes all
             reasonable precautions to safeguard personal information.
           </p>
-          {/* <br /> */}
           <br />
           <p style={{ textDecoration: "underline" }}>INTRODUCTION</p>
-          {/* <br /> */}
           <br />
           <p>
             Demos is committed to protecting your privacy and security. This
             policy explains how and why we use your personal data, to ensure you
             remain informed and in control of your information.
           </p>
-          {/* <br /> */}
           <br />
           <p>
             You can decide not to receive communications or change how we

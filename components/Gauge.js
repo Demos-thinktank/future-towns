@@ -2,18 +2,8 @@ import ReactEcharts from "echarts-for-react"; // or var ReactEcharts = require('
 
 const Gauge = ({score}) => {
   const option = {
-    // tooltip: {
-    //     formatter: '{a} <br/>{b} : {c}%'
-    // },
-    // toolbox: {
-    //     feature: {
-    //         restore: {},
-    //         saveAsImage: {}
-    //     }
-    // },
     series: [
       {
-        // name: '业务指标',
         type: "gauge",
         detail: { show: false },
         data: [{ value: score, name: "" }],
@@ -38,17 +28,8 @@ const Gauge = ({score}) => {
             color: "#1d3336",
           },
         },
-
-        // detail: {
-        //     show: true ,
-        //     width ... ,
-        //     height ... ,
-        //     backgroundColor: 'transparent' ,
-        //      }
         splitLine: { show: false },
         clockwise: true,
-        //   startAngle: 180,
-        //   endAngle: 0,
       },
     ],
   };
@@ -59,10 +40,6 @@ const Gauge = ({score}) => {
         option={option}
         notMerge={true}
         lazyUpdate={true}
-        //   theme={"theme_name"}
-        //   onChartReady={this.onChartReadyCallback}
-        //   onEvents={EventsDict}
-        //   opts={}
       />
     </>
   );

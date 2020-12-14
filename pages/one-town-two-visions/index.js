@@ -2,14 +2,10 @@ import fs from "fs";
 import path from "path";
 import Head from "next/head";
 import Nav from "../../components/Nav";
-// import { useRouter } from "next/router";
 import styles from "../../styles/One-Town-Two-Visions.module.css";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Fade";
-// import GaugeChart from "react-gauge-chart";
-// import "react-gauge-chart/dist/GaugeChart/style.css";
-import { useEffect, useState } from "react";
-// import Questionnaire from "../../components/Questionnaire";
+import { useState } from "react";
 import Gauge from "../../components/Gauge";
 import Demographics from "../../components/Demographics";
 import Footer from "../../components/Footer";
@@ -19,8 +15,6 @@ export const getStaticProps = async () => {
   const filePath = path.join(dbDirectory, "polis.json");
   const fileContents = JSON.parse(fs.readFileSync(filePath, "utf8"));
 
-  // const towns = fileContents.towns.map((val) => val["Town"]);
-  //   const questions = fileContents.questions;
   const answerValues = fileContents.data.map((obj) => ({
     yes: obj["Adjusted yes"],
     no: obj["Adjusted no"],
@@ -39,13 +33,11 @@ const index = ({
   setSelectedTownIndex,
   isConnected,
 }) => {
-  //   console.log("qs", answerValues);
   const [state, setState] = useState(Array(questions.length).fill(0));
   const [counter, setCounter] = useState(0);
 
   function handleClick(e) {
     let { value } = e.target;
-    // console.log(e.target.value);
     let stateCopy = state.slice();
     stateCopy[counter] = parseInt(value);
     setState(stateCopy);
@@ -103,14 +95,12 @@ const index = ({
                     key={i}
                     style={{
                       backgroundColor: "whitesmoke",
-                      // borderRadius: "5px",
                       width: "90%",
                       margin: "auto",
                       textAlign: "center",
                       verticalAlign: "middle",
                       overflow: "hidden",
                       padding: "0.5rem",
-                      // minHeight: "35vh",
                       display: counter === i ? "block" : "none",
                     }}
                   >
@@ -123,7 +113,6 @@ const index = ({
               <div
                 style={{
                   display: "flex",
-                  // flexWrap: "wrap",
                   flexDirection: "column",
                   alignItems: "center",
                   justifyContent: "center",

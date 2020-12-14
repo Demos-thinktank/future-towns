@@ -1,14 +1,7 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
 import React from "react";
-import HomeSVG from "./HomeSVG";
 
 const Nav = () => {
-  // const router = useRouter();
-
-  // function handleClick() {
-  //   router.push("/");
-  // }
 
   return (
     <div

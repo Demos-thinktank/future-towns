@@ -29,7 +29,6 @@ export default function Home({
   const router = useRouter();
 
   function handleChange(e) {
-    // console.log(e.target.value);
     setError(false);
 
     var el = document
@@ -52,10 +51,6 @@ export default function Home({
     }
   }
 
-  // useEffect(() => {
-  //   console.log("stindex", selectedTownIndex);
-  // }, [selectedTownIndex]);
-
   return (
     <div>
       <Head>
@@ -67,9 +62,7 @@ export default function Home({
         <Nav />
         <div className={styles.ft_section}>
           <div className={styles.ft_section_heading}>
-            <div 
-            // style={{ margin: "auto" }}
-            >
+            <div>
               <p>FUTURE</p>
               <p>
                 T<span className={styles.ft_section_heading_span}>O</span>WNS
@@ -77,12 +70,20 @@ export default function Home({
             </div>
           </div>
           <div className={styles.ft_section_text}>
-            <p style={{ marginBottom: "0.5rem", fontWeight: 'bold', textAlign: 'right' }}>
-              Demos and KPMG have been investigating what the public want the future of towns in the UK to look like.
+            <p
+              style={{
+                marginBottom: "0.5rem",
+                fontWeight: "bold",
+                textAlign: "right",
+              }}
+            >
+              Demos and KPMG have been investigating what the public want the
+              future of towns in the UK to look like.
             </p>
-            <Link href='/'>
-            <a className={styles.section_link}>READ THE REPORT</a>
-          </Link></div>
+            <Link href="/">
+              <a className={styles.section_link}>READ THE REPORT</a>
+            </Link>
+          </div>
         </div>
         <div className={styles.tot_section}>
           <div style={{ maxWidth: "75%" }} className={`${styles.section} `}>
@@ -93,10 +94,11 @@ export default function Home({
               <p>TYPES OF</p>
               <p>TOWNS</p>
             </div>
-            <p style={{ marginBottom: "0.5rem", fontWeight: 'bold' }}>
-              Find out more about your town and see how it compares to other towns.
+            <p style={{ marginBottom: "0.5rem", fontWeight: "bold" }}>
+              Find out more about your town and see how it compares to other
+              towns.
             </p>
-            <Link href="/town-search" style={{margin: '1rem'}}>
+            <Link href="/town-search" style={{ margin: "1rem" }}>
               <a className={styles.section_link}>EXPLORE</a>
             </Link>
           </div>
@@ -110,7 +112,14 @@ export default function Home({
               <p className={styles.txt_color_white}>THE TWO</p>
               <p className={styles.txt_color_white}>TOWN GROUPS</p>
             </div>
-            <p className={styles.txt_color_white}style={{ marginBottom: "0.5rem", fontWeight: 'bold', textAlign: 'right' }} >
+            <p
+              className={styles.txt_color_white}
+              style={{
+                marginBottom: "0.5rem",
+                fontWeight: "bold",
+                textAlign: "right",
+              }}
+            >
               See how your views on the future of towns compare to others’.
             </p>
             <Link href="/one-town-two-visions">
@@ -120,9 +129,6 @@ export default function Home({
             </Link>
           </div>
         </div>
-        {/* <div  className={styles.bkg_img_section}>
-          no-content
-        </div> */}
         <Footer />
       </main>
     </div>

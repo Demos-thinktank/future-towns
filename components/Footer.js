@@ -7,9 +7,6 @@ const Footer = () => {
       style={{
         backgroundColor: "#1d3336",
         borderTop: "1px solid black",
-        // position: "fixed",
-        // bottom: 0,
-        // width: "100%",
       }}
     >
       <div
@@ -27,7 +24,6 @@ const Footer = () => {
             style={{
               backgroundColor: "#1d3336",
               height: "1.5rem",
-              // margin: "0.5rem",
             }}
           />
         </a>
@@ -37,7 +33,6 @@ const Footer = () => {
             style={{
               backgroundColor: "#1d3336",
               height: "2rem",
-              // margin: "1 0.5rem 0 0.5rem",
             }}
           />
         </a>
@@ -45,7 +40,6 @@ const Footer = () => {
       <div
         style={{
           margin: "0.5rem auto 1rem auto",
-          // width: "max-content",
           color: "white",
           fontSize: "0.9rem",
           display: 'flex',

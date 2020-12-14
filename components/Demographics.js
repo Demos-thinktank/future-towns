@@ -4,11 +4,8 @@ import RoseDiagram from './RoseDiagram'
 const Demographics = ({group}) => {
     const [selectedGroup, setSelectedGroup] = useState(group)
     const [selectedCategory, setSelectedCategory] = useState('Age')
-
-    // console.log(group)
     
     function onChangeValue(e) {
-    // console.log(e.target.value);
     setSelectedCategory(e.target.value)
   }
 

@@ -35,59 +35,24 @@ const RoseDiagram = ({selectedCategory, selectedGroup}) => {
         ],
         Region: [
             {
-                value: 6.2, 
-                name: 'East Midlands',     
-                itemStyle: {
-                    color: 'darkcyan'
-                }
-            },
-            {
-                value: 20.2, 
-                name: 'East of England',     
+                value: 16.2, 
+                name: 'Midlands',     
                 itemStyle: {
                     color: '#85CCD1'
                 }
             }, 
             {
-                value: 3.8, 
-                name: 'North East England',     
-                itemStyle: {
-                    color: 'darkred'
-                }
-            },
-            {
-                value: 8.1, 
-                name: 'North West England',     
-                itemStyle: {
-                    color: 'black'
-                }
-            },
-            {
-                value: 33.3, 
-                name: 'South East England',     
+                value: 15.7, 
+                name: 'North',     
                 itemStyle: {
                     color: '#1d3336'
                 }
             }, 
             {
-                value: 11.5, 
-                name: 'South West England',     
-                itemStyle: {
-                    color: '#676C72'
-                }
-            },
-            {
-                value: 10.0, 
-                name: 'West Midlands',     
+                value: 68.1, 
+                name: 'South',     
                 itemStyle: {
                     color: '#EE7155'
-                }
-            },
-            {
-                value: 3.9, 
-                name: 'Yorkshire and the Humber',     
-                itemStyle: {
-                    color: 'darkgoldenrod'
                 }
             },                                               
         ],
@@ -214,59 +179,24 @@ const RoseDiagram = ({selectedCategory, selectedGroup}) => {
         ],
         Region: [
             {
-                value: 6.0, 
-                name: 'East Midlands',     
-                itemStyle: {
-                    color: 'darkcyan'
-                }
-            },
-            {
-                value: 28.5, 
-                name: 'East of England',     
+                value: 11.7, 
+                name: 'Midlands',     
                 itemStyle: {
                     color: '#85CCD1'
                 }
             }, 
             {
-                value: 1.6, 
-                name: 'North East England',     
-                itemStyle: {
-                    color: 'darkred'
-                }
-            },
-            {
-                value: 7.0, 
-                name: 'North West England',     
-                itemStyle: {
-                    color: 'black'
-                }
-            },
-            {
-                value: 34.0, 
-                name: 'South East England',     
+                value: 11.7, 
+                name: 'North',     
                 itemStyle: {
                     color: '#1d3336'
                 }
             }, 
             {
-                value: 14.1, 
-                name: 'South West England',     
+                value: 76.6, 
+                name: 'South',     
                 itemStyle: {
-                    color: '#676C72'
-                }
-            },
-            {
-                value: 5.8, 
-                name: 'West Midlands',     
-                itemStyle: {
-                    color: '#ee7155'
-                }
-            },
-            {
-                value: 3.2, 
-                name: 'Yorkshire and the Humber',     
-                itemStyle: {
-                    color: 'darkgoldenrod'
+                    color: '#EE7155'
                 }
             },                                               
         ],
@@ -363,24 +293,15 @@ const RoseDiagram = ({selectedCategory, selectedGroup}) => {
     const currentDataSet = selectedGroup === 'A' ? groupAData[selectedCategory] : groupBData[selectedCategory]
 
     const option = {
-    // title: {
-    //     text: 'Title',
-    //     subtext: 'Sub Title',
-    //     left: 'center'
-    // },
     backgroundColor: 'whitesmoke',
     tooltip: {
         trigger: 'item',
         formatter: '{a}: {b} <br/> {c}%',
-        // position: ['50%', '50%']
     },
     series: [
         {
             type: 'pie',
             name: selectedCategory,
-            // radius: [20, 110],
-            // center: ['50%', '50%'],
-            // roseType: 'radius',
             top: 20,
             bottom: 5,
             left: 3,
@@ -397,11 +318,6 @@ const RoseDiagram = ({selectedCategory, selectedGroup}) => {
                 borderColor: 'whitesmoke',
                 borderStyle: 'solid'
             },
-            // emphasis: {
-            //     label: {
-            //         show: true
-            //     }
-            // },
             data: currentDataSet
         }
     ]
