@@ -62,6 +62,14 @@ const index = ({
         <title>Future Towns | Town Search</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preload" href="/fonts/Avenir.ttc" as="font" crossOrigin="" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@Demos" />
+        <meta name="twitter:title" content="The Future of Towns" />
+        <meta
+          name="twitter:description"
+          content="Demos and KPMG explore what people want for the future of their towns."
+        />
+        <meta name="twitter:image" content="/images/future-of-towns.png" />
       </Head>
       <div className={styles.page}>
         <Nav />
@@ -170,7 +178,7 @@ const index = ({
             <Zoom>
               <div className={styles.poll_result}>
                 <p style={{ fontWeight: "bold", WebkitTextStroke: "0.5px" }}>
-                  YOU ARE A{state.reduce((a, c) => a + c, 50) > 50 ? 'N': ''}
+                  YOU ARE A{state.reduce((a, c) => a + c, 50) > 50 ? "N" : ""}
                 </p>
                 <p
                   style={{
@@ -193,15 +201,20 @@ const index = ({
                     ? groupA.text
                     : groupB.text}
                 </p>
-              <br />
-              <br />
-              <p style={{ fontWeight: "bold" }}>See the pie chart below to take a closer look at the two town groups.</p>
+                <br />
+                <br />
+                <p style={{ fontWeight: "bold" }}>
+                  See the pie chart below to take a closer look at the two town
+                  groups.
+                </p>
               </div>
             </Zoom>
           )}
           <Gauge score={state.reduce((a, c) => a + c, 50)} />
           {counter == 12 && (
-            <Demographics group={state.reduce((a, c) => a + c, 50) > 50 ? 'A': 'B'} />
+            <Demographics
+              group={state.reduce((a, c) => a + c, 50) > 50 ? "A" : "B"}
+            />
           )}
         </main>
         <Footer />

@@ -20,6 +20,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 * {
   box-sizing: border-box;
   color: #1d3336;

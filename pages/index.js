@@ -57,6 +57,14 @@ export default function Home({
         <title>Future Towns</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preload" href="/fonts/Avenir.ttc" as="font" crossOrigin="" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@Demos" />
+        <meta name="twitter:title" content="The Future of Towns" />
+        <meta
+          name="twitter:description"
+          content="Demos and KPMG explore what people want for the future of their towns."
+        />
+        <meta name="twitter:image" content="/images/future-of-towns.png" />
       </Head>
       <main className={styles.main}>
         <Nav />
@@ -80,7 +88,13 @@ export default function Home({
               Demos and KPMG have been investigating what the public want the
               future of towns in the UK to look like.
             </p>
-              <a className={styles.section_link} href='https://demos.co.uk/project/the-future-of-towns/' target='blank'>READ THE REPORT</a>
+            <a
+              className={styles.section_link}
+              href="https://demos.co.uk/project/the-future-of-towns/"
+              target="blank"
+            >
+              READ THE REPORT
+            </a>
           </div>
         </div>
         <div className={styles.tot_section}>

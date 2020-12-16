@@ -102,6 +102,14 @@ export default function TownSearch({
         <title>Future Towns | Town Search</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preload" href="/fonts/Avenir.ttc" as="font" crossOrigin="" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@Demos" />
+        <meta name="twitter:title" content="The Future of Towns" />
+        <meta
+          name="twitter:description"
+          content="Demos and KPMG explore what people want for the future of their towns."
+        />
+        <meta name="twitter:image" content="/images/future-of-towns.png" />
       </Head>
       <div className={styles.page}>
         <Nav />
@@ -166,11 +174,14 @@ export default function TownSearch({
                 }}
               >
                 Sorry, we don't define that place as a town. To find out more
-                about how we define towns click <a 
-                href="https://demos.co.uk/project/the-future-of-towns/" 
-                style={{textDecoration: 'underline'}}
-                target='blank'
-                >here</a>
+                about how we define towns click{" "}
+                <a
+                  href="https://demos.co.uk/project/the-future-of-towns/"
+                  style={{ textDecoration: "underline" }}
+                  target="blank"
+                >
+                  here
+                </a>
               </p>
               {townResults && (
                 <Fade>
